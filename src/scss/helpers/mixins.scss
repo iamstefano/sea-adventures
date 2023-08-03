@@ -1,0 +1,54 @@
+@mixin flexboxCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexboxCenterColumn() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin centerPosition() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin neumorphism {
+  background-color: #FFFFFF;
+  border-radius: rem(10px);
+  box-shadow: 8px 8px 14px #c6cacc, -8px -8px 14px #ffffff;
+  transition: box-shadow 0.4s ease-in-out;
+  outline: none;
+}
+
+@mixin gradient-animation($time) {
+  animation: gradient $time ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+@mixin backgroundTitleGradientColor {
+  background: -webkit-linear-gradient(#E49BE6, #719AE9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

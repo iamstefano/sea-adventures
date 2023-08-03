@@ -1,0 +1,31 @@
+%heading {
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+%paragraph {
+  font-weight: 400;
+}
+
+%paragraphBold {
+  font-weight: bold;
+}
+
+%neumorphism {
+  background-color: $background-main;
+  border-radius: rem(10px);
+  box-shadow: 8px 8px 14px #c6cacc, -8px -8px 14px #ffffff;
+  transition: box-shadow 0.4s ease-in-out;
+  outline: none;
+}
+
+%neumorphismActive {
+  box-shadow: inset -5px -5px 10px #c8d1da, inset 5px 5px 10px #ffffff;
+}
+
+%backgroundTitleGradientColor {
+  background: -webkit-linear-gradient(#e49be6, #719ae9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
