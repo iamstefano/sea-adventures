@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Header from "@/components/header";
+import Hero from "@/components/hero";
 import styles from "@/styles/Home.module.scss";
 
 export default function Home() {
@@ -13,8 +14,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <Hero />
       <main className={`${styles.main}`}>
-        <div className={styles.container}></div>
+        <div className={styles.content}></div>
       </main>
     </>
   );
