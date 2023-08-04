@@ -45,9 +45,9 @@ const CardList = () => {
 
   return (
     <div className={styles.CardList}>
-      <div className={styles.Filter}>
+      <div className={styles.__filter}>
         <select
-          className={styles.PortFilter}
+          className={styles.__portFilter}
           onChange={handleGroupFilter}
           value={group}
         >
@@ -62,8 +62,8 @@ const CardList = () => {
 
       <div className={styles.__list}>{renderCards()}</div>
       {showCard < filteredData.length && (
-        <button className={styles.ShowMore} onClick={handleShowMore}>
-          Mostra altri
+        <button className={styles.__showMore} onClick={handleShowMore}>
+          Mostra altro
         </button>
       )}
     </div>
