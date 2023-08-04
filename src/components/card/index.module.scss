@@ -35,6 +35,7 @@
       align-items: flex-start;
 
       span {
+        text-transform: uppercase;
         color: $c-secondary2;
       }
 
@@ -61,10 +62,28 @@
     justify-content: space-between;
     align-items: center;
 
-    p:nth-last-child(-n + 1) {
+    &__left {
+      display: flex;
+      flex-direction: column;
+
+      p:last-of-type {
+        color: $c-secondary2;
+      }
+    }
+
+    &__right {
+      display: flex;
+      flex-direction: column;
+
+      p:last-of-type {
+        color: $c-secondary2;
+      }
+    }
+
+    /*  p:nth-last-child(-n + 1) {
       color: $c-secondary2;
       text-align: right;
-    }
+    } */
   }
 
   &__Card__reservations {
