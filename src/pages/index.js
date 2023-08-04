@@ -5,6 +5,7 @@ import styles from "@/styles/Home.module.scss";
 import CardList from "@/components/cardList";
 import Banner from "@/components/banner";
 import RandomList from "@/components/randomList";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       </main>
       <Banner />
       <RandomList />
+      <Footer />
     </>
   );
 }
