@@ -1,13 +1,9 @@
-.main {
-  max-width: 1440px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* padding: 1rem; */
-  min-height: 100vh;
+@media screen and (max-width: 767px) {
+  .main {
+    min-height: 50vh;
+    color: $c-main;
+  }
 }
-
 //media query TABLETS & LAPTOPS
 @media screen and (min-width: 481px) and (max-width: 1023px) {
 }
@@ -15,9 +11,8 @@
 //media query DESKTOP
 @media screen and (min-width: 1024px) {
   .main {
-    width: 100%;
-    max-width: 1441px;
-    height: auto;
+    max-width: 1440px;
     max-height: 100%;
+    margin: auto;
   }
 }
