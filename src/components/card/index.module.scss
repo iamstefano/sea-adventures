@@ -1,0 +1,96 @@
+.Card {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: $c-secondary;
+  border-radius: 10px;
+  padding: 14px;
+  gap: 8px;
+
+  &__Card__upper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    span {
+      font-weight: bold;
+    }
+
+    p {
+      text-align: justify;
+    }
+  }
+
+  &__Card__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      span {
+        color: $c-secondary2;
+      }
+
+      p {
+        font-weight: bold;
+        font-size: larger;
+      }
+    }
+
+    &__right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      p {
+        text-align: start;
+      }
+    }
+  }
+
+  &__Card__dates {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p:nth-last-child(-n + 1) {
+      color: $c-secondary2;
+      text-align: right;
+    }
+  }
+
+  &__Card__reservations {
+    display: flex;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+
+      span:first-of-type {
+        color: $c-secondary2;
+      }
+
+      span:last-of-type {
+        font-weight: bold;
+      }
+    }
+  }
+
+  button {
+    height: 36px;
+    margin-top: 10px;
+    border: none;
+    background-color: $c-main;
+    color: $c-secondary;
+    text-transform: uppercase;
+    border-radius: 10px;
+  }
+}

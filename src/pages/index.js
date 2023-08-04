@@ -3,6 +3,7 @@ import Image from "next/image";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import styles from "@/styles/Home.module.scss";
+import CardList from "@/components/cardList";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       <Header />
       <Hero />
       <main className={`${styles.main}`}>
-        <div className={styles.content}></div>
+        <CardList />
       </main>
     </>
   );
