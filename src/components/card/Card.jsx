@@ -34,14 +34,20 @@ const Card = ({ card }) => {
         </div>
 
         <div className={styles.Card__Card__dates}>
-          <p>{card.departureDate}</p>
+          <div className={styles.Card__Card__dates__left}>
+            <p>{card.departureDate.slice(0, 10)}</p>
+            <p>{card.departureDate.slice(10, 16)}</p>
+          </div>
           <Image
             src={rightarrow}
             width={30}
             height={30}
             alt="Right arrow"
           ></Image>
-          <p>{card.arrivalDate}</p>
+          <div className={styles.Card__Card__dates__right}>
+            <p>{card.arrivalDate.slice(0, 10)}</p>
+            <p>{card.arrivalDate.slice(10, 16)}</p>
+          </div>
         </div>
 
         <div className={styles.Card__Card__reservations}>
