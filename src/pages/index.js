@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import styles from "@/styles/Home.module.scss";
 import CardList from "@/components/cardList";
+import Banner from "@/components/banner";
 
 export default function Home() {
   return (
@@ -19,6 +19,7 @@ export default function Home() {
       <main className={`${styles.main}`}>
         <CardList />
       </main>
+      <Banner />
     </>
   );
 }
