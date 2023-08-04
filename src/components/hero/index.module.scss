@@ -27,9 +27,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: $c-secondary;
     font-weight: lighter;
     letter-spacing: 2px;
+
+    h3 {
+      color: $c-secondary;
+    }
   }
 }
 
