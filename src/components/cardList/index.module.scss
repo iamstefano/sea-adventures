@@ -13,11 +13,21 @@
       flex-wrap: wrap;
       gap: 30px;
     }
+
+    button {
+      border: none;
+      background-color: $c-main;
+      width: 200px;
+      height: 30px;
+      color: $c-secondary;
+      margin: 0 auto;
+    }
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .CardList {
+    display: flex;
   }
 }
 
@@ -34,6 +44,15 @@
       justify-content: center;
       flex-wrap: wrap;
       gap: 30px;
+    }
+
+    button {
+      background-color: $c-main;
+      border: none;
+      width: 200px;
+      height: 30px;
+      color: $c-secondary;
+      margin: 0 auto;
     }
   }
 }
