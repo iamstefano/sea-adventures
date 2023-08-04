@@ -4,6 +4,7 @@ import Hero from "@/components/hero";
 import styles from "@/styles/Home.module.scss";
 import CardList from "@/components/cardList";
 import Banner from "@/components/banner";
+import RandomList from "@/components/randomList";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <CardList />
       </main>
       <Banner />
+      <RandomList />
     </>
   );
 }

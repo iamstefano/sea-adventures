@@ -1,0 +1,73 @@
+@media screen and (max-width: 767px) {
+  .RandomList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+    padding: 10px;
+
+    .__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    button {
+      border: none;
+      background-color: $c-main;
+      width: 200px;
+      height: 30px;
+      color: $c-secondary;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .RandomList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+    padding: 10px;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    .__list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .RandomList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+    padding: 10px;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    .__list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    button {
+      background-color: $c-main;
+      border: none;
+      width: 200px;
+      height: 30px;
+      color: $c-secondary;
+      margin: 0 auto;
+    }
+  }
+}
