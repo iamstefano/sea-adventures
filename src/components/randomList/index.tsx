@@ -1,3 +1,3 @@
-import RandomList from "./RandomList.jsx";
+import RandomList from "./RandomList";
 
 export default RandomList;
