@@ -12,8 +12,8 @@ const Banner = () => {
           <Image
             className={styles.__image}
             src={banner}
-            layout={"fill"}
-            objectFit={"cover"}
+            fill
+            style={{ objectFit: "cover" }}
             alt="Banner section image background"
           />
           <div className={styles.__over}>

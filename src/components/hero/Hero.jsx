@@ -12,8 +12,8 @@ const Hero = () => {
           <Image
             className={styles.__image}
             src={hero}
-            layout={"fill"}
-            objectFit={"cover"}
+            fill
+            style={{ objectFit: "cover" }}
             alt="Hero section image background"
           />
           <div className={styles.__over}>
